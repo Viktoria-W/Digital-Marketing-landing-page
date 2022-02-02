@@ -1,0 +1,67 @@
+.header {
+
+    &__container {
+    }
+
+    &__navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 36px 0px 0px 0px;
+    }
+
+    &__button {
+        
+    }
+
+    &__button-search {
+    }
+
+    &__button-basket {
+    }
+
+    &__button-menu {
+        position: relative;
+        width: 17px;
+        height: 2px;
+        background-color: $gray-text;
+        display: flex;
+        justify-content: flex-end;
+        
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: $gray-text;
+        }
+        &::before {
+            top: 4px;
+            width: 10px;
+        }
+        &::after {
+            top: -4px;
+            width: 24px;
+        }
+    }
+
+    &__menu {
+    }
+}
+.logo {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $title-color;
+}
+.menu {
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__link {
+    }
+}
