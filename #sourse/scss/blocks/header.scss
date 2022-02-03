@@ -1,6 +1,8 @@
 .header {
+    background-color: $background;
 
     &__container {
+        min-height: 532px;
     }
 
     &__navigation {
@@ -11,13 +13,19 @@
     }
 
     &__button {
-        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     &__button-search {
+        padding: 4px 0px 0px 0px;
+        display: block;
     }
 
     &__button-basket {
+        padding: 5px 0px 0px 24px;
+        display: block;
     }
 
     &__button-menu {
@@ -27,6 +35,8 @@
         background-color: $gray-text;
         display: flex;
         justify-content: flex-end;
+        cursor: pointer;
+        margin: 13px 0px 0px 32px;
         
         &::before, &::after {
             content: '';
@@ -48,20 +58,129 @@
     &__menu {
     }
 }
+
+@media (min-width: $tablet) {
+        .header {
+
+        &__container {
+            min-height: 150px;
+        }
+
+        &__button-menu {
+            background-color: $title-color;
+
+            &::before, &::after {
+                background-color: $title-color;
+            }
+        }
+    }
+}
+
+@media (min-width: $laptop) {
+    .header {
+        background-color: transparent;
+
+		&__container {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 984px;
+            padding: 0px 20px;
+		}
+
+		&__navigation {
+            min-width: 965px;
+		}
+
+		&__button-search {
+            display: none;
+		}
+
+		&__button-basket {
+            display: none;
+		}
+        
+    }
+    .header-position {
+        position: relative;
+    }
+}
+
+@media (min-width: $desktop) {
+    .header {
+
+        &__container {
+            max-width: 1183px;
+            padding: 0px 0px;
+        }
+
+        &__navigation{
+            min-width: 1183px;
+        }
+    }
+}
+
 .logo {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
     color: $title-color;
 }
+
 .menu {
 
     &__list {
+        margin: 110px 0px 0px 0px;
     }
 
     &__item {
+        font-size: 30px;
+        line-height: 150%;
+        letter-spacing: 0.2px;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin: 0px 0px 30px 0px;
+        }
+
     }
 
     &__link {
+        color: $gray-text;
+    }
+}
+
+@media (min-width: $tablet)  {
+
+    .menu {
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: flex-start;
+            margin: 30px 0px 0px 0px;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin: 0px 21px 15px 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: $laptop) {
+    .menu {
+
+		&__list {
+            margin: -25px 5px 0px 150px;
+		}
+
+		&__item {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 171%;
+		}
     }
 }
