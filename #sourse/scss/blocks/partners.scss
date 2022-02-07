@@ -1,0 +1,127 @@
+.main {
+
+    &__partners {
+        min-height: 1230px;
+    }
+}
+.partners {
+
+    &__container {
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__block-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0px 0px 60px 0px;
+        max-width: 153px;
+    }
+
+    &__mailing-list {
+    }
+
+    &__mailing-list-block {
+        background-color: $bgr-blue;
+        min-width: 414px;
+        min-height: 212px;
+        margin: 0px 0px 0px -38px;
+    }
+
+    &__mailing-list-block-title {
+        font-family: "Montserrat-Bold", "Arial", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 133%;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: $white;
+        padding: 30px 74px 30px;
+    }
+
+    &__mailing-list-form {
+        position: relative;
+        padding: 0px 38px;
+    }
+
+    &__mailing-list-input {
+        border: 1px solid $border;
+        border-radius: 5px;
+        box-sizing: border-box;
+        width: 337px;
+        height: 58px;
+        font-size: 14px;
+        line-height: 200%;
+        letter-spacing: 0.2px;
+        color: $gray-text;
+    }
+
+    &__mailing-list-btn {
+        position: absolute;
+        top: 1px;
+        left: 259px;
+        background-color: $yellow-text;
+        color: $white;
+        padding: 14px 22px;
+        border-radius: 0px 5px 5px 0px;
+        font-size: 14px;
+        line-height: 200%;
+        text-align: center;
+        letter-spacing: 0.2px;
+    }
+}
+
+@media (min-width: $tablet) {
+    .partners {
+        &__mailing-list-block  {
+            min-width: 800px;
+            margin: 0px 0px 0px -20px;
+        }
+
+        &__mailing-list-form {
+            padding: 0px 160px;
+        }
+
+        &__mailing-list-input {
+            width: 450px;
+        }
+
+        &__mailing-list-btn {
+            left: 494px;
+        }
+    }
+}
+@media (min-width: $laptop) {
+    .partners {
+        &__mailing-list{
+            background-color: $title-color;
+        }
+        &__mailing-list-block {
+            min-width: 986px;
+            min-height: 124px;
+            display: flex;
+            margin: 0px 0px 0px 0px;
+        }
+
+        &__mailing-list-block-title {
+            padding: 30px 180px 30px 50px;
+            text-align: left;
+        }
+
+        &__mailing-list-form {
+            padding: 33px 40px 33px 0px;
+        }
+
+        &__mailing-list-btn {
+            top: 34px;
+            left: 334px;
+        }
+    }
+}

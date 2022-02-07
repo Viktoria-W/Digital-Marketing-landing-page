@@ -1,0 +1,125 @@
+.main {
+
+    &__advantages {
+        min-height: 1298px;
+    }
+}
+
+@media (min-width: $tablet) {
+    .main {
+
+        &__advantages {
+            min-height: 526px;
+        }
+    }
+}
+
+.advantages {
+    background-color: $background-white;
+
+    &__block-text {
+        padding: 98px 0px 0px 0px;
+    }
+
+    &__title {
+        padding: 0px 39px 10px 39px;
+    }
+
+    &__sup-title {
+        padding: 0px 52px 75px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        width: 230px;
+        min-height: 233px;
+        background-color: $white;
+        padding: 30px 40px;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+
+    &__img {
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__list-title {
+        font-family: "Montserrat-Bold", "Arial", sans-serif;
+        font-size: 40px;
+        line-height: 142%;
+        letter-spacing: 0.2px;
+        color: $title-color;
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__list-text {
+        font-family: "Montserrat-Bold", "Arial", sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        color: $gray-text;
+    }
+}
+
+@media (min-width: $tablet) {
+    .advantages {
+        &__item {
+            margin: 0px 20px 30px 0px;
+            &:not(:last-child) {
+                margin: 0px 20px 30px 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .advantages {
+
+        &__block-text {
+            padding: 210px 0px 0px 0px;
+        }
+
+        &__sup-title {
+            padding: 0px 310px 55px;
+        }
+
+        &__item {
+            margin: 0px 30px 30px 0px;
+            min-height: 209px;
+            padding: 18px 40px;
+
+            &:not(:last-child) {
+                margin: 0px 30px 30px 0px;
+            }
+        }
+    }
+}
+
+.title {
+    font-family: "Montserrat-Bold", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 142%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $title-color;
+}
+
+.sup-title {
+    font-family: "Montserrat-Medium", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $gray-text;
+}

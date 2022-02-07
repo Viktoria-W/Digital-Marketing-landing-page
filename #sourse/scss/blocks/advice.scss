@@ -1,0 +1,97 @@
+.advice {
+    background-color: $background-white;
+
+    &__text-block {
+        text-align: center;
+        padding: 150px 0px 0px 0px;
+    }
+
+    &__titile {
+        margin: 0px 72px 10px;
+    }
+
+    &__sup-title {
+        margin: 0px 52px 75px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        width: 283px;
+        min-height: 321px;
+        background-color: $white;
+        margin: 0px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-family: "Montserrat-Bold", "Arial", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        color: $title-color;
+        padding: 30px 102px 15px 30px;
+    }
+
+    &__text {
+        font-family: "Montserrat-Medium", "Arial", sans-serif;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.2px;
+        color: $gray-text;
+        padding: 0px 40px 30px 30px;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+@media (min-width: $tablet) {
+    .advice {
+        &__list {
+            justify-content: flex-start;
+            margin: 0px 90px;
+        }
+
+        &__item {
+            align-content: space-between;
+            max-width: 240px;
+
+            &:not(:last-child) {
+                margin: 0px 30px 30px 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: $laptop) {
+    .advice {
+        &__list {
+            margin: 0px 220px;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .advice {
+        &__list {
+            justify-content: center;
+            margin: 0px;
+        }
+
+        &__sup-title {
+            margin: 0px 290px 45px;
+        }
+    }
+}
