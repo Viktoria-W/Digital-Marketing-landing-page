@@ -4,34 +4,89 @@
         min-height: 1230px;
     }
 }
-.partners {
 
-    &__container {
+@media (min-width: $tablet) {
+    .main {
+
+        &__partners {
+            min-height: 800px;
+        }
     }
+}
+
+@media (min-width: $laptop) {
+    .main {
+
+        &__partners {
+            min-height: 339px;
+        }
+    }
+}
+
+.partners {
 
     &__block {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 175px;
     }
 
     &__block-img {
-        width: 100%;
-        height: auto;
-        display: block;
         margin: 0px 0px 60px 0px;
-        max-width: 153px;
+        overflow: hidden;
+        min-width: min-content;
+
+        &:first-child {
+            margin-top: 81px;
+        }
     }
 
-    &__mailing-list {
+    &__link {
+        display: block;
+        min-width: 100px;
     }
 
+    &__img {
+        display: block;
+    }
+
+    &__img-hooly-link {
+        width: 153px;
+        height: 50px;
+    }
+
+    &__img-lyft-link {
+        width: 146px;
+        height: 99px;
+    }
+
+    &__img-pied-piper-link {
+        width: 152px;
+        height: 109px;
+    }
+
+    &__img-strype-link {
+        width: 149px;
+        height: 60px;
+    }
+
+    &__img-aws-link {
+        width: 151px;
+        height: 92px;
+    }
+
+    &__img-reddit-link {
+        width: 151px;
+        height: 142px;
+    }
+    
     &__mailing-list-block {
         background-color: $bgr-blue;
         min-width: 414px;
         min-height: 212px;
-        margin: 0px 0px 0px -38px;
+        border-radius: 2px;
     }
 
     &__mailing-list-block-title {
@@ -61,6 +116,7 @@
         line-height: 200%;
         letter-spacing: 0.2px;
         color: $gray-text;
+        padding: 0px 0px 0px 20px;
     }
 
     &__mailing-list-btn {
@@ -79,10 +135,51 @@
 }
 
 @media (min-width: $tablet) {
+
     .partners {
+
+        &__block {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        &__block-img {
+            margin: 0px 42px 55px 0px;
+        }
+
+        &__img-hooly-link {
+            width: 103px;
+            height: 34px;
+        }
+    
+        &__img-lyft-link {
+            width: 83px;
+            height: 59px;
+        }
+    
+        &__img-pied-piper-link {
+            width: 102px;
+            height: 75px;
+        }
+    
+        &__img-strype-link {
+            width: 103px;
+            height: 42px;
+        }
+    
+        &__img-aws-link {
+            width: 104px;
+            height: 62px;
+        }
+    
+        &__img-reddit-link {
+            width: 76px;
+            height: 72px;
+        }
+
         &__mailing-list-block  {
             min-width: 800px;
-            margin: 0px 0px 0px -20px;
         }
 
         &__mailing-list-form {
@@ -98,16 +195,27 @@
         }
     }
 }
+
 @media (min-width: $laptop) {
+
     .partners {
-        &__mailing-list{
-            background-color: $title-color;
+
+        &__block {
+            justify-content: space-around;
+            padding: 50px 0px 0px 0px;
         }
+        &__block-img {
+            margin: 0px;
+            
+            &:first-child {
+                margin-top: 0px;
+            }
+        }
+
         &__mailing-list-block {
-            min-width: 986px;
+            max-width: 986px;
             min-height: 124px;
             display: flex;
-            margin: 0px 0px 0px 0px;
         }
 
         &__mailing-list-block-title {
@@ -125,3 +233,28 @@
         }
     }
 }
+
+@media (min-width: $desktop) {
+    .partners {
+
+        &__mailing-list {
+                position: relative;
+
+            &::after{
+                content: '';
+                top: 50%;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                height: 77px;
+                background-color: $title-color;
+            }
+        }
+
+        &__mailing-list-block {
+            position: relative;
+            z-index: 5;
+        }
+    }
+}
+
