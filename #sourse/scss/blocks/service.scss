@@ -17,7 +17,7 @@
 .service {
 
     &__text-block {
-        padding: 100px 0px 0px 0px;
+        padding: 60px 0px 0px 0px;
     }
 
     &__title {
@@ -30,7 +30,7 @@
     .service {
 
         &__text-block {
-            padding: 100px 230px 0px;
+            padding: 130px 230px 0px;
         }
     }
 }
@@ -40,7 +40,7 @@
         &__video-block {
             display: grid;
             grid-template-columns: 600px 1fr;
-            margin: 100px 0px 0px 0px;
+            margin: 100px 35px 0px;
         }
     }
 }
@@ -50,6 +50,7 @@
     &__wrapper {
         box-sizing: border-box;
         margin: 100px 0px 0px 0px;
+        display: flex;
     }
 
     &__statick-img {
@@ -64,18 +65,22 @@
 
     &__button-play {
         position: relative;
-        top: -50%;
-        left: 50%;
+        top: 0;
+        left: -50%;
         transform: translateX(-50%);
         display: block;
+        cursor: pointer;
     }
 
     &__video {
         display: none;
+        position: relative;
+        top: 0;
+        left: 0;
     }
 
     &__text-block {
-        padding: 594px 0px 0px 0px;
+        padding: 35px 0px 0px 0px;
     }
     &__title {
         font-family: "Montserrat-Bold", "Arial", sans-serif;
@@ -133,9 +138,8 @@
     .video-block {
 
         &__statick-img {
-            min-width: 100%;
+            min-width: 95%;
         }
-
 
         &__title {
             text-align: center;
@@ -166,10 +170,11 @@
         }
 
         &__text-block {
-            padding: 594px 200px 0px;
+            padding: 100px 200px 0px;
         }
+        
         &__title {
-            padding: 0px;
+            padding: 25px 0px 0px;
         }
 
         &__text {
@@ -196,6 +201,10 @@
         &__item {
             grid-template-columns: min-content 1fr;
             justify-items: flex-start;
+
+            &:not(:last-child) {
+                margin: 0px 0px 40px 0px;
+            }
         }
     }
 }

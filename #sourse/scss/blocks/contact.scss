@@ -81,6 +81,10 @@
 @media (min-width: $laptop) {
     .contact {
 
+        &__text-block {
+            padding: 100px 0px 90px 0px;
+        }
+
         &__list {
             display: flex;
             flex-wrap: wrap;

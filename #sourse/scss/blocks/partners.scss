@@ -9,7 +9,7 @@
     .main {
 
         &__partners {
-            min-height: 800px;
+            min-height: 500px;
         }
     }
 }
@@ -34,13 +34,9 @@
     }
 
     &__block-img {
-        margin: 0px 0px 60px 0px;
+        margin: 0px 0px 25px 0px;
         overflow: hidden;
         min-width: min-content;
-
-        &:first-child {
-            margin-top: 81px;
-        }
     }
 
     &__link {
@@ -142,6 +138,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             align-items: flex-start;
+            padding: 30px 0px 0px 0px;
         }
 
         &__block-img {
@@ -202,7 +199,7 @@
 
         &__block {
             justify-content: space-around;
-            padding: 50px 0px 0px 0px;
+            padding: 80px 20px 0px;
         }
         &__block-img {
             margin: 0px;
@@ -239,10 +236,11 @@
 
         &__mailing-list {
                 position: relative;
+                padding: 48px 0px 0px 0px;
 
             &::after{
                 content: '';
-                top: 50%;
+                top: 67%;
                 left: 0;
                 position: absolute;
                 width: 100%;
