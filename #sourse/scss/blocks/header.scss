@@ -21,11 +21,21 @@
     &__button-search {
         padding: 4px 0px 0px 0px;
         display: block;
+
+        &:hover,
+        &:active  path {
+            fill: $yellow-text;
+        }
     }
 
     &__button-basket {
-        padding: 5px 0px 0px 24px;
+        margin: 5px 0px 0px 24px;
         display: block;
+
+        &:hover,
+        &:active  path {
+            fill: $yellow-text;
+        }
     }
 
     &__button-menu {
@@ -45,17 +55,22 @@
             height: 2px;
             background-color: $gray-text;
         }
+
         &::before {
             top: 4px;
             width: 10px;
         }
+
         &::after {
             top: -4px;
             width: 24px;
         }
-    }
 
-    &__menu {
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $yellow-text;
+        }
     }
 }
 
@@ -64,6 +79,20 @@
 
         &__container {
             min-height: 150px;
+        }
+
+        &__button-search {
+    
+            &:focus {
+                border-bottom: 1px solid $black;
+            }
+        }
+
+        &__button-basket {
+
+            &:focus {
+                border-bottom: 1px solid $black;
+            }
         }
 
         &__button-menu {
@@ -120,14 +149,17 @@
         }
     }
 }
+
 @media (min-width: 1441px) {
     .header {
+        
         &__container {
             left: 55%;
             transform: translateX(-55%);
 		}
     }
 }
+
 .logo {
     font-weight: 600;
     font-size: 24px;
@@ -155,6 +187,11 @@
 
     &__link {
         color: $gray-text;
+
+        &:hover,
+        &:active {
+            color: $black; 
+        }
     }
 }
 
@@ -165,13 +202,20 @@
         &__list {
             display: flex;
             flex-wrap: wrap;
-            flex-direction: flex-start;
+            justify-content: flex-start;
             margin: 30px 0px 0px 0px;
         }
 
         &__item {
             &:not(:last-child) {
                 margin: 0px 21px 15px 0px;
+            }
+        }
+
+        &__link {
+    
+            &:focus {
+                border-bottom: 1px solid $black;
             }
         }
     }

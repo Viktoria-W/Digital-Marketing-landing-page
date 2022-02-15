@@ -37,6 +37,7 @@
 
 @media (min-width: $desktop) {
     .service {
+
         &__video-block {
             display: grid;
             grid-template-columns: 600px 1fr;
@@ -65,11 +66,24 @@
 
     &__button-play {
         position: relative;
-        top: 0;
+        top: 40%;
         left: -50%;
         transform: translateX(-50%);
         display: block;
         cursor: pointer;
+        width: 97px;
+        height: auto;
+
+        &:focus {
+            border: 1px solid $yellow-text;
+            border-radius: 50%;
+        }
+
+        &:hover {
+            width: 120px;
+            height: 110px;
+            transition-duration: .4s;        
+        }
     }
 
     &__video {
@@ -82,6 +96,7 @@
     &__text-block {
         padding: 35px 0px 0px 0px;
     }
+    
     &__title {
         font-family: "Montserrat-Bold", "Arial", sans-serif;
         font-weight: bold;
@@ -140,7 +155,7 @@
         &__statick-img {
             min-width: 95%;
         }
-
+        
         &__title {
             text-align: center;
             padding: 0px 160px;
@@ -189,15 +204,22 @@
             margin: 0px;
         }
 
+        &__button-play {
+            height: 98px;
+        }
+
         &__text-block {
             padding: 0px 0px 0px 120px;
         }
+
         &__title {
             text-align: left;
         }
+
         &__text {
             text-align: left;
         }
+
         &__item {
             grid-template-columns: min-content 1fr;
             justify-items: flex-start;

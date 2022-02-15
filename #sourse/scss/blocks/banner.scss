@@ -1,5 +1,6 @@
 .banner { 
     background: url("../img/background.jpg") top center / auto 100% no-repeat;
+
     &__container {
         min-height: 1494px;
         padding: 50px 0px 0px 0px;
@@ -18,7 +19,7 @@
     }
 
     &__text {
-        font-weight: 500px;
+        font-weight: 500;
         font-size: 20px;
         line-height: 150%;
         color: $gray-text;
@@ -94,7 +95,7 @@
 
 @media (min-width: $desktop) {
     .banner {
-        background: url("../img/background.jpg") top right / 100% auto no-repeat;
+        background: url("../img/background.jpg") top right / 100% 95% no-repeat;
         background-color: $background-white;
 
         &__container {
@@ -129,12 +130,27 @@
         font-size: 14px;
         line-height: 200%;
         font-weight: 700;
+
+        &:hover {
+            border: 1px solid $yellow-text;
+            color: $yellow-text;
+            transition-duration: 0.5s;
+        }
+
+        &:focus {
+            border: 2px solid $gray-text;
+        }
 	}
 
 	&__selected {
         color: $white;
         background-color: $yellow-text;
         border: 1px solid $yellow-text;
+
+        &:hover {
+            background-color: $white;
+            color: $yellow-text;
+        }
 	}
 }
 
@@ -207,9 +223,7 @@
 @media (min-width: $desktop) {
 
     .cards {
-        &__container {
-            
-        }
+        
         &__list {
             margin: 80px 40px 0px;
             position: relative;

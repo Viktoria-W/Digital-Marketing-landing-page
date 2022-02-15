@@ -71,8 +71,10 @@
 
 @media (min-width: $tablet) {
     .advantages {
+
         &__item {
             margin: 0px 20px 30px 0px;
+
             &:not(:last-child) {
                 margin: 0px 20px 30px 0px;
             }

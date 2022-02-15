@@ -47,6 +47,14 @@
     &__link {
         display: block;
         color: inherit;
+
+        &:focus {
+            border-bottom: 1px solid $yellow-text;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     &__text {
@@ -64,6 +72,17 @@
         padding: 10px 20px;
         width: 160px;
         min-height: 44px;
+
+        &:focus {
+            border: 1px solid $blue;
+        }
+
+        &:hover {
+            background-color: $blue;
+            color: $white;
+            transition-duration: .4s;
+            border: none;
+        }
     }
 
     &__item-selected {
@@ -75,6 +94,15 @@
         background-color: $title-color;
         color: $white;
         border: 1px solid $white;
+    }
+}
+
+@media (min-width: $tablet) {
+    .contact {
+        
+        &__list {
+            margin: 0px 20px;
+        }
     }
 }
 
@@ -90,6 +118,7 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            margin: 0px;
         }
 
         &__item-size-m {
