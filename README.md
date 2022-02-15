@@ -1,11 +1,11 @@
 # Digital Marketing landing page.
-## Проект: 
+## :open_file_folder: Проект: 
 Лэндинг компании по цифровой маркетингу Indicorp. 
-## Технологии: 
+## :computer: Технологии: 
 HTML, SCSS.
-## Сборка: 
+## :package: Сборка: 
 Prepros.
-## Особенности: 
+## :star: Особенности: 
 * Разработка по принципу mobile-first. 
 * Шрифты подключены локально в папке fonts в трех форматах “woff2”, “woff”, “ttf”. 
 * Цвета объявлены через переменные.
@@ -14,13 +14,13 @@ Prepros.
 * Векторная графика вставлена тегом ```<svg>``` (там, где требуются ее видоизменения, в остальных случаях вставлена тегом ```<img>```).
 * Ссылка на готовый проект: https://viktoria-w.github.io/Digital-Marketing-landing-page/ (в качестве хостинга Git).
 ***
-## Project: 
+## :open_file_folder: Project: 
 Landing page for digital marketing company Indicorp.
-## Technologies: 
+## :computer: Technologies: 
 HTML, SCSS.
-## Assembly: 
+## :package: Assembly: 
 Prepros.
-## Peculiarities: 
+## :star: Peculiarities: 
 * Mobile-first development.
 * The fonts are included locally in the fonts folder in the three formats “woff2”, “woff”, “ttf”.
 * Colors are declared through variables.
