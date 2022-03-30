@@ -71,6 +71,14 @@
         &:focus {
             background-color: $yellow-text;
         }
+
+        &:hover::before {
+            background-color: $yellow-text;
+        }
+
+        &:hover::after {
+            background-color: $yellow-text;
+        }
     }
 }
 

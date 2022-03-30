@@ -22,7 +22,7 @@
     }
 
     &__item {
-        min-width: 327px;
+        
         min-height: 333px;
         background-color: $white;
         margin: 0px 0px 30px 0px;
@@ -94,6 +94,14 @@
         background-color: $title-color;
         color: $white;
         border: 1px solid $white;
+    }
+}
+
+@media (min-width: $mobile-l) {
+    .contact {
+        &__item {
+            min-width: 327px;
+        }
     }
 }
 

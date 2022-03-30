@@ -59,7 +59,7 @@
         top: 0;
         left: 0;
         display: block;
-        max-width: 333px;
+        max-width: 300px;
         min-height: 442px;
         object-fit: cover;
     }
@@ -82,7 +82,7 @@
         &:hover {
             width: 120px;
             height: 110px;
-            transition-duration: .4s;        
+            transition-duration: .4s;
         }
     }
 
@@ -146,6 +146,14 @@
         color: $gray-text;
         grid-column-start: 2;
         grid-column-end: 3;
+    }
+}
+
+@media (min-width: $mobile-l) {
+    .video-block {
+        &__statick-img {
+            max-width: 333px;
+        }
     }
 }
 
