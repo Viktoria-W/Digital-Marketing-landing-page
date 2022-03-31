@@ -49,13 +49,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .container {
     max-width: 320px;
+    margin: 0 auto;
     padding: 0px 10px;
 }
 
 @media (min-width: $mobile-l) {
     .container {
         max-width: 341px;
-        margin: 0 auto;
         padding: 0;
     }
 }
