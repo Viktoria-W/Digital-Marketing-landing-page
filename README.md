@@ -1,6 +1,6 @@
 # Digital Marketing landing page.
 ## :open_file_folder: Проект: 
-Лэндинг компании по цифровой маркетингу Indicorp. 
+Лэндинг компании по цифровому маркетингу Indicorp. 
 ## :computer: Технологии: 
 HTML, SCSS.
 ## :package: Сборка: 
